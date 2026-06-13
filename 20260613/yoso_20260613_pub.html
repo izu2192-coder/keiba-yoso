@@ -812,89 +812,86 @@
       padding-top:calc(52px + 8px); box-shadow:4px 0 24px rgba(0,0,0,.5);
     }
     .sidebar.open { transform:translateX(0); }
-    .main { padding:14px 14px calc(24px + env(safe-area-inset-bottom)); }
-    .race-block { margin: 12px 0; border-radius: 10px; }
-    .race-header { flex-wrap: wrap; gap: 6px; padding: 10px 12px; }
-    .race-num { font-size: 15px; padding: 3px 10px; }
-    .race-name { font-size: 14px; }
+    .main { padding:10px 8px calc(20px + env(safe-area-inset-bottom)); }
+    .race-block { margin: 10px 0; border-radius: 10px; }
+    .race-header { flex-wrap: wrap; gap: 6px; padding: 9px 10px; }
+    .race-num { font-size: 14px; padding: 2px 9px; }
+    .race-name { font-size: 13px; }
     .race-id-label { display: none; }
     .odds-note { font-size: 11px; width: 100%; }
-    .cond-badge { font-size: 11px; padding: 2px 6px; }
+    .cond-badge { font-size: 10px; padding: 2px 5px; }
     .score-tables { grid-template-columns: 1fr; }
-    .score-label { font-size: 13px; padding: 7px; }
-    table { font-size: 13px; }
-    th { padding: 7px 3px; font-size: 11px; }
-    td { padding: 8px 3px; }
-    .horse-name { max-width: 100px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-    .score-val { font-size: 15px; }
-    .medal { font-size: 14px; }
+    .score-label { font-size: 12px; padding: 6px; }
     .col-weight { display: none; }
-    .pace-section { padding: 8px 10px 12px; }
-    .pace-info-bar { gap: 6px; flex-wrap: wrap; }
-    .pace-chip { font-size: 13px; padding: 3px 10px; }
-    .adv-chip { font-size: 12px; }
-    .corner-col { min-width: 60px; padding: 7px 4px; flex: 1; }
-    .c-num-label { font-size: 10px; margin-bottom: 5px; }
-    .pb { width: 24px; height: 24px; font-size: 10px; }
-    .c-arrow { font-size: 16px; padding: 0 2px; }
-    .finish-label { font-size: 18px; }
-    .pace-desc { font-size: 12px; line-height: 1.8; }
-    .bet-section { padding: 8px 10px 12px; }
-    .bet-table th, .bet-table td { padding: 6px 6px; }
-    .form-pos { width: 20px; font-size: 10px; }
-    .bb { width: 26px; height: 26px; font-size: 12px; }
-    .result-section { padding: 8px 10px 12px; }
-    .payout-section { padding: 8px 10px 12px; }
-    details.race-section > summary { padding: 10px 12px; font-size: 13px; }
-    .sd-label { width: 50px; font-size: 10px; }
+    .pace-section { padding: 8px 8px 10px; }
+    .pace-info-bar { gap: 5px; flex-wrap: wrap; }
+    .pace-chip { font-size: 12px; padding: 3px 8px; }
+    .adv-chip { font-size: 11px; }
+    .corner-col { min-width: 56px; padding: 6px 3px; flex: 1; }
+    .c-num-label { font-size: 10px; margin-bottom: 4px; }
+    .pb { width: 22px; height: 22px; font-size: 9px; }
+    .c-arrow { font-size: 14px; padding: 0 1px; }
+    .finish-label { font-size: 16px; }
+    .pace-desc { font-size: 11px; line-height: 1.7; }
+    .bet-section { padding: 8px 8px 10px; }
+    .bb { width: 24px; height: 24px; font-size: 11px; }
+    .result-section { padding: 8px 8px 10px; }
+    .payout-section { padding: 8px 8px 10px; }
+    details.race-section > summary { padding: 9px 10px; font-size: 12px; }
+    .sd-label { width: 46px; font-size: 10px; }
     .sd-val { font-size: 10px; }
-    .sd-inner { gap: 10px; padding: 8px 10px; }
+    .sd-inner { gap: 8px; padding: 7px 8px; }
     .conf-badge { font-size: 10px; padding: 1px 5px; }
     .pf-chip { font-size: 9px; padding: 1px 4px; }
-    .s-cards { gap: 8px; }
-    .s-card { padding: 12px 14px; min-width: 100px; }
-    .s-card-val { font-size: 24px; }
-    .an-text { font-size: 12px; }
-    .s-graph-block { padding: 10px 10px; }
+    .s-cards { gap: 7px; }
+    .s-card { padding: 10px 12px; min-width: 90px; }
+    .s-card-val { font-size: 22px; }
+    .an-text { font-size: 11px; }
+    .s-graph-block { padding: 8px; }
 
     /* ── pub レースヘッド ── */
-    .pub-race { margin:0 0 24px !important; }
-    .race-hd-top { flex-direction:column; gap:8px; }
-    .race-title { font-size:17px; }
+    .pub-race { margin:0 0 20px !important; }
+    .race-hd-top { flex-direction:column; gap:6px; }
+    .race-title { font-size:16px; }
     .race-badges { flex-wrap:wrap; }
 
     /* ── pub タブ ── */
     .rtabs { overflow-x:auto; -webkit-overflow-scrolling:touch; flex-wrap:nowrap; scrollbar-width:none; }
     .rtabs::-webkit-scrollbar { display:none; }
-    .rtab { padding:9px 14px; font-size:12px; white-space:nowrap; flex-shrink:0; }
+    .rtab { padding:8px 12px; font-size:12px; white-space:nowrap; flex-shrink:0; }
 
-    /* ── pub テーブル（カード型） ── */
-    .hr-table,.hr-table tbody { display:block; }
-    .hr-table thead { display:none; }
+    /* ── 展開図 ── */
     .track-scroll { overflow-x:visible; }
-    .track-stage { min-width:0; width:100%; height:100px; }
-    .track-horse { width:18px; height:18px; font-size:8px; }
-    .track-horse.honmei { width:22px; height:22px; font-size:9px; }
-    .hr-row { display:flex; flex-wrap:wrap; align-items:center; padding:9px 10px 7px; min-height:0; -webkit-tap-highlight-color:transparent; }
-    .hr-row td { display:block; padding:0; }
-    .hr-medal { order:1; width:16px; font-size:11px; margin-right:4px; align-self:flex-start; padding-top:4px; }
-    .hr-numcol { order:2; width:40px; margin-right:6px; display:flex; flex-direction:column; align-items:center; gap:2px; }
-    .hnum-badge { width:28px; height:28px; font-size:13px; line-height:28px; }
-    .hr-gate { font-size:9px; margin-left:0; }
-    .hr-info { order:3; flex:1; min-width:0; margin-right:4px; }
-    .hr-name { font-size:13px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
-    .hr-jockey { font-size:11px; }
-    .hr-mark-col { order:4; width:32px; text-align:center; }
-    .mark-chip { width:22px; height:22px; font-size:16px; }
-    .hr-grade-col { order:5; width:26px; text-align:center; }
-    .hr-grade { width:22px; height:22px; font-size:12px; border-radius:3px; }
-    .hr-score-col { order:6; width:100%; padding:5px 0 0 60px; display:flex; align-items:center; gap:6px; }
-    .hr-score-num { font-size:12px; flex-shrink:0; }
-    .hr-bar-bg { flex:1; margin-top:0; height:5px; }
-    .hr-prob { order:7; flex:1; text-align:center; padding-top:5px; font-size:11px; border-top:1px solid var(--border); margin-top:5px; display:inline-flex; flex-direction:column; align-items:center; gap:1px; }
-    .prob-label { display:block; font-size:9px; color:var(--text3); font-weight:700; }
-    .admin-mark-td { order:8; width:36px; text-align:center; border-left:none; border-right:none; padding-top:0; }
+    .track-stage { min-width:0; width:100%; height:96px; }
+    .track-horse { width:17px; height:17px; font-size:8px; }
+    .track-horse.honmei { width:21px; height:21px; font-size:9px; }
+
+    /* ── pub テーブル（デスクトップ同型・コンパクト縮小） ── */
+    .hr-table { table-layout:fixed; width:100%; font-size:11px; }
+    .hr-table,.hr-table tbody { display:table; }
+    .hr-table thead { display:none; }
+    .hr-row { display:table-row; }
+    .hr-row td { display:table-cell; padding:6px 2px; vertical-align:middle; }
+    .hr-medal { width:14px; text-align:center; font-size:11px; padding-left:3px !important; }
+    .hr-numcol { width:32px; text-align:center; vertical-align:middle; }
+    .hnum-badge { width:26px; height:26px; font-size:12px; line-height:26px; display:inline-flex; }
+    .hr-gate { display:none; }
+    .hr-info { overflow:hidden; max-width:0; width:auto; }
+    .hr-name { font-size:12px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:88px; }
+    .hr-jockey { display:none; }
+    .hr-mark-col { width:22px; text-align:center; }
+    .mark-chip { width:20px; height:20px; font-size:14px; }
+    .admin-mark-td { width:20px; text-align:center; font-size:13px; font-weight:800; padding:0; border:none !important; }
     .admin-mark-th { display:none; }
+    .hr-grade-col { width:24px; text-align:center; }
+    .hr-grade { width:20px; height:20px; font-size:10px; border-radius:3px; }
+    .hr-score-col { width:72px; }
+    .hr-score-num { font-size:12px; font-weight:700; display:block; }
+    .hr-bar-bg { height:4px; margin-top:3px; }
+    .hr-probs-inline { display:none; }
+    .hr-prob { width:24px !important; font-size:10px; padding-right:2px !important; text-align:right; }
+    .hr-prob-hide { display:table-cell !important; }
+    .prob-label { display:none; }
   }
 
   /* ========== アニメーション ========== */
@@ -33964,7 +33961,7 @@
 </div>
     </div></div>
 
-    <p style="font-size:11px;color:var(--text3);margin-top:20px;text-align:right">生成: 2026/06/13 09:20:48</p>
+    <p style="font-size:11px;color:var(--text3);margin-top:20px;text-align:right">生成: 2026/06/13 09:28:25</p>
   </main>
 </div>
 </div>
