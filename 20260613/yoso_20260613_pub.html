@@ -1028,13 +1028,13 @@
 
   /* ── 見方ガイド ── */
   .guide-btn {
-    margin-left:auto; height:34px; padding:0 10px; border-radius:8px;
-    background:var(--surface); border:1px solid var(--border2);
-    color:var(--text2); font-size:11px; font-weight:700; cursor:pointer;
+    margin-left:auto; height:32px; padding:0 11px; border-radius:8px;
+    background:rgba(245,140,30,0.15); border:1px solid rgba(245,140,30,0.5);
+    color:#f58c1e; font-size:12px; font-weight:800; cursor:pointer;
     display:flex; align-items:center; gap:4px; white-space:nowrap; flex-shrink:0;
-    -webkit-tap-highlight-color:transparent;
+    -webkit-tap-highlight-color:transparent; letter-spacing:.02em;
   }
-  .guide-btn:active { background:var(--card2); }
+  .guide-btn:active { background:rgba(245,140,30,0.28); }
   .guide-overlay {
     display:none; position:fixed; inset:0; z-index:500;
     background:rgba(0,0,0,0.55);
@@ -1075,7 +1075,6 @@
 <header class="topbar">
   <button class="menu-btn" id="menuBtn">☰<span class="menu-btn-label">レース一覧</span></button>
   <div class="topbar-logo">おにんしこ<span>競馬予想</span></div>
-  <div class="topbar-venue" id="topbarVenue"></div>
   <div class="topbar-date">2026/06/13</div>
   <button class="guide-btn" id="guideBtn" onclick="toggleGuide()">？ 見方</button>
 </header>
@@ -42981,7 +42980,7 @@
 </div>
     </div></div>
 
-    <p style="font-size:11px;color:var(--text3);margin-top:20px;text-align:right">生成: 2026/06/13 09:41:33</p>
+    <p style="font-size:11px;color:var(--text3);margin-top:20px;text-align:right">生成: 2026/06/13 09:46:10</p>
   </main>
 </div>
 </div>
@@ -43036,11 +43035,6 @@ function showRace(pageId) {
     el.classList.toggle('active', el.dataset.page === pageId);
   });
   var link = document.querySelector('.race-link[data-page="'+pageId+'"]');
-  if(link) {
-    var rn = link.querySelector('.rn'), rm = link.querySelector('.rname');
-    var tv = document.getElementById('topbarVenue');
-    if(tv) tv.textContent = (rn?rn.textContent:'') + ' ' + (rm?rm.textContent:'');
-  }
   var main = document.getElementById('main');
   if(main) main.scrollTop = 0;
   if(window.innerWidth <= 768) closeSidebar();
