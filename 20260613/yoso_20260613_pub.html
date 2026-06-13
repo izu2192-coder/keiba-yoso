@@ -91,11 +91,13 @@
     border-bottom:1px solid var(--border); z-index:200;
   }
   .menu-btn {
-    display:none; width:38px; height:38px; border-radius:8px; background:none; border:none;
-    color:var(--text2); font-size:20px; cursor:pointer; align-items:center; justify-content:center;
-    -webkit-tap-highlight-color:transparent; flex-shrink:0;
+    display:none; height:36px; padding:0 10px; border-radius:8px;
+    background:var(--surface); border:1px solid var(--border2);
+    color:var(--text1); font-size:15px; cursor:pointer; align-items:center; justify-content:center;
+    gap:5px; -webkit-tap-highlight-color:transparent; flex-shrink:0; white-space:nowrap;
   }
-  .menu-btn:active { background:var(--card); }
+  .menu-btn:active { background:var(--card2); }
+  .menu-btn-label { font-size:11px; font-weight:700; letter-spacing:0.03em; }
   .topbar-logo { font-weight:900; font-size:15px; letter-spacing:-.01em; }
   .topbar-logo span { color:var(--gold); }
   .topbar-date { font-size:12px; color:var(--text3); margin-left:auto; white-space:nowrap; }
@@ -819,11 +821,11 @@
     .cond-badge { font-size: 11px; padding: 2px 6px; }
     .score-tables { grid-template-columns: 1fr; }
     .score-label { font-size: 13px; padding: 7px; }
-    table { font-size: 13px; }
-    th { padding: 7px 3px; font-size: 11px; }
-    td { padding: 8px 3px; }
-    .horse-name { max-width: 100px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-    .score-val { font-size: 15px; }
+    table { font-size: 14px; }
+    th { padding: 8px 4px; font-size: 12px; }
+    td { padding: 9px 4px; }
+    .horse-name { max-width: 110px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .score-val { font-size: 16px; }
     .medal { font-size: 14px; }
     .col-weight { display: none; }
     .pace-section { padding: 8px 10px 12px; }
@@ -839,7 +841,7 @@
     .bet-section { padding: 8px 10px 12px; }
     .bet-table th, .bet-table td { padding: 6px 6px; }
     .form-pos { width: 20px; font-size: 10px; }
-    .bb { width: 24px; height: 24px; font-size: 11px; }
+    .bb { width: 26px; height: 26px; font-size: 12px; }
     .result-section { padding: 8px 10px 12px; }
     .payout-section { padding: 8px 10px 12px; }
     details.race-section > summary { padding: 10px 12px; font-size: 13px; }
@@ -868,21 +870,21 @@
     /* ── pub テーブル（カード型） ── */
     .hr-table,.hr-table tbody { display:block; }
     .hr-table thead { display:none; }
-    .hr-row { display:flex; flex-wrap:wrap; align-items:center; padding:12px 12px 9px; min-height:72px; -webkit-tap-highlight-color:transparent; }
+    .hr-row { display:flex; flex-wrap:wrap; align-items:center; padding:14px 14px 10px; min-height:78px; -webkit-tap-highlight-color:transparent; }
     .hr-row td { display:block; padding:0; }
-    .hr-medal { order:1; width:18px; font-size:12px; margin-right:5px; align-self:flex-start; padding-top:5px; }
-    .hr-numcol { order:2; width:46px; margin-right:8px; display:flex; flex-direction:column; align-items:center; gap:2px; }
-    .hnum-badge { width:30px; height:30px; font-size:14px; line-height:30px; }
-    .hr-gate { font-size:9px; margin-left:0; }
+    .hr-medal { order:1; width:20px; font-size:13px; margin-right:6px; align-self:flex-start; padding-top:5px; }
+    .hr-numcol { order:2; width:50px; margin-right:8px; display:flex; flex-direction:column; align-items:center; gap:2px; }
+    .hnum-badge { width:34px; height:34px; font-size:16px; line-height:34px; }
+    .hr-gate { font-size:10px; margin-left:0; }
     .hr-info { order:3; flex:1; min-width:0; margin-right:6px; }
-    .hr-name { font-size:14px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
-    .hr-jockey { font-size:12px; }
-    .hr-mark-col { order:4; width:40px; text-align:center; }
-    .mark-chip { width:26px; height:26px; font-size:18px; }
-    .hr-grade-col { order:5; width:30px; text-align:center; }
-    .hr-grade { width:26px; height:26px; font-size:14px; border-radius:4px; }
-    .hr-score-col { order:6; width:100%; padding:6px 0 0 71px; display:flex; align-items:center; gap:8px; }
-    .hr-score-num { font-size:13px; flex-shrink:0; }
+    .hr-name { font-size:15px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+    .hr-jockey { font-size:13px; }
+    .hr-mark-col { order:4; width:44px; text-align:center; }
+    .mark-chip { width:28px; height:28px; font-size:20px; }
+    .hr-grade-col { order:5; width:32px; text-align:center; }
+    .hr-grade { width:28px; height:28px; font-size:15px; border-radius:4px; }
+    .hr-score-col { order:6; width:100%; padding:7px 0 0 76px; display:flex; align-items:center; gap:8px; }
+    .hr-score-num { font-size:14px; flex-shrink:0; }
     .hr-bar-bg { flex:1; margin-top:0; height:6px; }
     .hr-prob { order:7; flex:1; text-align:center; padding-top:8px; font-size:12px; border-top:1px solid var(--border); margin-top:8px; display:flex; flex-direction:column; align-items:center; gap:2px; }
     .admin-mark-td { order:8; width:40px; text-align:center; border-left:none; border-right:none; padding-top:0; }
@@ -1013,7 +1015,7 @@
 <body>
 <div class="app-shell">
 <header class="topbar">
-  <button class="menu-btn" id="menuBtn">☰</button>
+  <button class="menu-btn" id="menuBtn">☰<span class="menu-btn-label">レース一覧</span></button>
   <div class="topbar-logo">おにんしこ<span>競馬予想</span></div>
   <div class="topbar-venue" id="topbarVenue"></div>
   <div class="topbar-date">2026/06/13</div>
@@ -33956,7 +33958,7 @@
 </div>
     </div></div>
 
-    <p style="font-size:11px;color:var(--text3);margin-top:20px;text-align:right">生成: 2026/06/13 08:58:52</p>
+    <p style="font-size:11px;color:var(--text3);margin-top:20px;text-align:right">生成: 2026/06/13 09:13:01</p>
   </main>
 </div>
 </div>
